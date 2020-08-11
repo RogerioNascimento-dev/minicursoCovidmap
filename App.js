@@ -1,15 +1,18 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import Home from './src/pages/Home';
-import Single from './src/pages/Single';
-import List from './src/pages/List';
+import {NavigationContainer} from '@react-navigation/native';
+import AppBottom from './src/routes/Botton.routes';
+
 
 export default function App() {
   return (
-    <>
-      <StatusBar backgroundColor="#FF0011" />
-      <List />  
-    </>    
+    
+    <NavigationContainer>
+      <StatusBar backgroundColor="#FF0011" />      
+      <AppBottom />  
+    </NavigationContainer>
+    
   );
 }
 
