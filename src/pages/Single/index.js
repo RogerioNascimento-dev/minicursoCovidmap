@@ -4,11 +4,11 @@ import styles from './styles';
 
 
 const Single = ({route}) =>{
-    const {uf} = route.params;
-    console.log(uf);
+    const {uf} = route.params;  
+    
     return(
         <View style={styles.container}>
-            <Text>Estou na single</Text>
+            <Text>Estou na single {uf}</Text>
         </View>
     )
 }
